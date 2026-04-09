@@ -156,6 +156,11 @@ body {
     height: 100%;
 }
 
+.why-box .icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
 /* REVIEWS */
 .reviews {
     color: white;
@@ -202,8 +207,32 @@ body {
     font-weight: 500;
 }
 
-/* Badge mejorado */
-.badge-custom {
-    background: #22c55e;
-    font-weight: 600;
+/* PAYMENTS */
+.payments {
+    color: white;
+}
+
+.payment-box {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.payment-box .icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Destacar Mercado Pago */
+.featured-payment {
+    border: 2px solid #22c55e;
+}
+
+/* Texto comisión */
+.comision {
+    color: #ef4444;
+    font-size: 0.8rem;
 }
