@@ -48,10 +48,6 @@ body {
     transition: 0.3s;
 }
 
-.card-custom:hover {
-    transform: translateY(-10px);
-}
-
 /* DESTACADO */
 .featured {
     border: 2px solid #22c55e;
@@ -137,6 +133,16 @@ body {
     width: 40px;
 }
 
+.extra-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.extra-link:hover .extra-box {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 /* WHY */
 .why {
     color: white;
@@ -179,4 +185,25 @@ body {
     .title {
         font-size: 2rem;
     }
+}
+
+/* Precio tachado */
+.old-price {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-size: 1rem;
+    margin-right: 8px;
+}
+
+/* Urgencia */
+.urgency {
+    color: #ef4444;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Badge mejorado */
+.badge-custom {
+    background: #22c55e;
+    font-weight: 600;
 }
