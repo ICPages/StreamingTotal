@@ -1,0 +1,182 @@
+:root {
+    --space: 1rem; /* equivalente mb-3 */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b0f1a;
+}
+
+/* SECCIONES */
+.section {
+    margin-top: calc(var(--space) * 3);
+}
+
+/* ESPACIADO INTERNO UNIFORME */
+.container > * + *,
+.card-custom > * + *,
+.why-box > * + *,
+.review-box > * + *,
+.hero .container > * + * {
+    margin-top: var(--space);
+}
+
+/* HERO */
+.hero {
+    padding: 20px 20px 20px;
+    color: white;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #9ca3af;
+}
+
+/* CARDS */
+.card-custom {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    color: black;
+    transition: 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+}
+
+/* DESTACADO */
+.featured {
+    border: 2px solid #22c55e;
+}
+
+.badge-custom {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #22c55e;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* LOGOS */
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0; /* 🔥 importante */
+}
+
+.logos img {
+    width: 60px;
+}
+
+.logos.small img {
+    width: 45px;
+}
+
+/* TEXTOS */
+.section-title {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* PRECIO */
+.price {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+/* BOTÓN */
+.btn-custom {
+    background: #22c55e;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-custom:hover {
+    background: #16a34a;
+}
+
+/* EXTRAS */
+.extras {
+    color: white;
+}
+
+.extra-box {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.extra-box img {
+    width: 40px;
+}
+
+/* WHY */
+.why {
+    color: white;
+}
+
+.why-box {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+/* REVIEWS */
+.reviews {
+    color: white;
+}
+
+.review-box {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Espaciado del carrusel */
+.carousel {
+    margin-top: 1rem;
+}
+
+/* Centrar contenido */
+.carousel-item {
+    text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+}
